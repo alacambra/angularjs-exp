@@ -1,33 +1,5 @@
-'use strict';
-
 /**
- * @ngdoc overview
- * @name angularjsExpApp
- * @description
- * # angularjsExpApp
- *
- * Main module of the application.
+ * Created by alacambra on 19.08.14.
  */
-angular
-  .module('angularjsExpApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+angular.module('example', []);
+
