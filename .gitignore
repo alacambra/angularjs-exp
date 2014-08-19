@@ -9,3 +9,5 @@ bower_components
 .jshintrc
 .travis.yml
 npm-debug.log
+.idea/
+angularjs-exp.iml
