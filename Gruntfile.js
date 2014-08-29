@@ -1,4 +1,4 @@
-// Generated on 2014-08-11 using generator-angular 0.9.5
+// Generated on 2014-08-29 using generator-angular 0.9.5
 'use strict';
 
 // # Globbing
@@ -118,8 +118,8 @@ module.exports = function (grunt) {
       },
       all: {
         src: [
-          'Gruntfile.js'
-//          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          'Gruntfile.js',
+          '<%= yeoman.app %>/scripts/drgdr/{,*/}*.js'
         ]
       },
       test: {
@@ -319,6 +319,11 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
+        }, {
+          expand: true,
+          cwd: 'bower_components/bootstrap/dist',
+          src: 'fonts/*',
+          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {
